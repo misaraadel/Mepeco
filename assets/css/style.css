@@ -970,7 +970,7 @@ main {
 .navbar .top-nav {
   width: 100%;
   padding: 12px 0px;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   position: relative;
   z-index: 9;
 }
@@ -1007,7 +1007,7 @@ main {
   .navbar .top-nav .contain .contact-list .item {
     width: 30px;
     height: 30px;
-    border: 1px solid #4cc0eb;
+    border: 1px solid var(--light-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1018,7 +1018,7 @@ main {
 }
 .navbar .top-nav .contain .contact-list .item:first-child {
   padding-inline-end: 12px;
-  border-inline-end: 1px solid #4cc0eb;
+  border-inline-end: 1px solid var(--light-color);
 }
 .navbar .top-nav .contain .contact-list .item img {
   width: 20px;
