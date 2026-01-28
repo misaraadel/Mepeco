@@ -4107,5 +4107,75 @@ footer {
   }
 }
 
+.locations {
+  .box {
+    width: 100%;
+    padding: 20px 15px;
+    background-color: var(--light-color);
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 9;
+    transition: all .3s linear;
+    @include topBottomShadow();
+
+    .image-contain {
+      width: 80px;
+      height: 80px;
+      @include flexCenter();
+      border-radius: 50%;
+      margin: 0px auto;
+      @include topBottomShadow();
+      background-color: var(--light-color);
+
+      img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain
+      }
+    }
+
+    h2 {
+      color: var(--dark-color);
+      font-size: 20px;
+      font-weight: 900;
+      margin: 20px 0px;
+    }
+
+    p {
+      color: var(--gray-color);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .flex-icons {
+      @include flexCenter();
+      gap: 10px;
+
+      a {
+        width: 40px;
+        height: 40px;
+
+        img {
+          @include imageContain();
+        }
+
+        &.location {
+          background-color: var(--light-color);
+          border-radius: 50%;
+          @include flexCenter();
+          @include topBottomShadow();
+
+          img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 @import "media";
